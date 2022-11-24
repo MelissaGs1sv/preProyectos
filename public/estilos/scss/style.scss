@@ -1,0 +1,13 @@
+/*! GS1 Web Guidelines */
+// ============================================================================
+
+@use "variables" as gs1-vars;
+@use "../node_modules/rfs/scss" as rfs with (
+  $rfs-base-value: gs1-vars.$rfs-base-value,
+  $rfs-factor: gs1-vars.$rfs-factor,
+  $rfs-breakpoint: gs1-vars.$rfs-breakpoint
+);
+@use "colors";
+@use "normalize-custom";
+@use "type";
+@use "utilities";

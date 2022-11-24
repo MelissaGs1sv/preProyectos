@@ -1,0 +1,447 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* background-color: #333; */
+    background-color: rgba(240, 226, 209, 0.4);
+    background-image: url(../img/cafePacas-Sour/nuevaPacas.png);
+    background-size: cover;
+    background-position-x:90%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    text-justify: auto;
+ 
+}
+
+
+/* .ver{
+  background-color: rgba(173, 172, 170, 0.4);
+} */
+
+h2{
+  font-weight: 300;
+font-size: 27px;
+text-shadow:
+   0 0 1px #000,
+   -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+   1px 1px 0 #000;
+}
+
+.prueba{
+  color: #B5803F;
+  text-align: center;
+}
+
+  /* NavBar */
+  .topnav {
+    overflow: auto;
+    background-color: #C1A381;
+    width: 100%;
+    text-align: center;
+  }
+
+  header a.logo {
+    font-size:15px;
+    
+    transition: all 0.3s ease;
+  }
+  
+  /*   */
+
+
+  /* Contenedor Uno info del produc */
+  .contenedor,
+  .wave-contenedor{
+      width: 90%;
+      max-width: 1000px;
+      overflow: hidden;
+      margin: 10px auto;
+      padding: 0 0 50px 0;
+      border-radius: 13px;    
+  }
+
+
+
+  .contenedor{
+      padding: 80px 0;
+  }
+  
+  .titulo{
+      text-align: center;
+      margin-bottom: 30px;
+  }
+  
+  .titulo.left{
+      text-align: left;
+      color: #B5803F;
+      
+  }
+  
+
+  .website{
+    display: flex;
+    justify-content: space-between;
+}
+
+.personWeb {
+  flex-direction: row-reverse;
+  
+}
+
+
+.website .contenedor-textos-main{
+    width: 80%;
+}
+
+.parrafo{
+    text-align: justify;
+    margin-bottom: 15px;
+    color: white;
+    
+}
+
+p{
+  color: white;
+ 
+}
+
+ul li{
+  color: white;
+}
+
+  /*    */
+
+
+  /*TABLA DOS*/
+
+
+  table {
+    border: 1px solid #C1A381;;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    
+    
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+    color: #ddd;
+    background-color: #333;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+    
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #E3821C;
+  }
+  
+
+  /*   */
+
+/* Footer */
+
+footer {
+  background-color:#B5803F;
+  border-top: 1px solid #6F3400;
+  font-size: 17px;
+  padding: 25px 25px;
+  color: #ffffff;
+  text-align: center;
+
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+/*   */
+
+
+/* Cards */
+
+/* .galeria{
+  background:#6F3400;
+}
+
+.galeria-cont{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.galeria-cont>i{
+  width: 30%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  display: block;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+
+
+
+.section-card {
+  padding: 0 30px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.section-card .card {
+  margin: 20px auto;
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: linear-gradient(
+    140deg,
+    #C1A381,
+    #C1A381 20%,
+    #A95505 20.5%,
+    #A95505
+  );
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+.section-card .card .img-container {
+  padding: 10px 0 0 0;
+}
+.section-card .card .img-container img {
+  filter: drop-shadow(0px -5px 25px rgba(0, 0, 0, 0.7));
+  transform: scale(1.15);
+}
+.section-card .card .infos {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.section-card .card .infos .name,
+.section-card .card .infos .price {
+  color: #fff;
+}
+.section-card .card .infos .name {
+  font-size: 1.1rem;
+}
+
+.section-card .card .infos .btn {
+  font-family: "Radio Canada", sans-serif;
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  border: 1px solid #f2f2f2;
+  font-size: 1rem;
+  font-weight: 300;
+  min-width: 150px;
+  cursor: pointer;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #6F3400;
+  transition: all 0.2s ease-in;
+}
+.section-card .card .infos .btn:hover {
+  background-color: transparent;
+  color: #fff;
+  box-shadow: none;
+}
+
+
+
+@media screen and (min-width: 700px) {
+  .section-card .card {
+    display: flex;
+    align-items: center;
+    min-width: 550px;
+    padding: 15px 20px;
+  }
+  .section-card .card .img-container {
+    padding-top: 0;
+    width: 60%;
+  }
+} */
+
+/*   */
+
+
+  /*responsive*/
+
+  @media screen and (max-width: 400px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: center;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+
+
+/*   TopBar */
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    /*  */
+
+    /* Section product Info */
+
+   
+
+  .website .contenedor-textos-main{
+    margin-bottom: 25px;
+}
+
+h2{
+  font-size: 18px;
+}
+
+ul li{
+  text-align: center;
+}
+
+    /*   */
+
+
+    .ver{
+      background-color: rgba(0, 0, 0, 0.0);
+    }
+  }
+  
+  @media screen and (max-width:750px){
+
+     /* Section product Info */
+
+     .titulo.left{
+      text-align: center;
+  }
+
+  .info p{
+      text-align: center;
+  }
+
+  /* section */
+  .website{
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .website img{
+      width: 100%;
+  }
+
+  .website .contenedor-textos-main{
+      width: 100%;
+  }
+
+  /*  */
+
+
+  body{
+    background-size: cover;
+    background-position-x:60%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 20px;
+ 
+}
+
+ul li{
+  text-align: center;
+}
+
+
+
+/*  */
+.ver{
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+
+  }
+
+
+  /*     */

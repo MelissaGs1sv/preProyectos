@@ -1,0 +1,27 @@
+// Utilities
+// ============================================================================
+
+@use "variables" as gs1-vars;
+@use "../node_modules/rfs/scss" as rfs;
+
+$spacers: (
+  "gs1-spacer-1": gs1-vars.$spacer-1,
+  "gs1-spacer-2": gs1-vars.$spacer-2,
+  "gs1-spacer-3": gs1-vars.$spacer-3,
+  "gs1-spacer-4": gs1-vars.$spacer-4,
+  "gs1-spacer-5": gs1-vars.$spacer-5,
+  "gs1-spacer-6": gs1-vars.$spacer-6,
+  "gs1-spacer-7": gs1-vars.$spacer-7,
+);
+
+@each $spacer, $value in $spacers {
+  .#{$spacer} {
+    @include rfs.margin-bottom($value !important);
+  }
+}
+
+:root {
+  @each $spacer, $value in $spacers {
+    @include rfs.rfs($value, --#{$spacer});
+  }
+}

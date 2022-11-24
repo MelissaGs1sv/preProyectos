@@ -1,0 +1,275 @@
+// Colors
+// ============================================================================
+
+// All colors
+
+$color-blue-dark-1: #001a4d;
+$color-blue-dark-2: #001335;
+$color-blue: #002c6c;
+$color-danger-dark-1: #90151a;
+$color-danger-dark-2: #750e13;
+$color-danger-light-1: #ffcccc;
+$color-danger-light-2: #ffdfdf;
+$color-danger: #ba1b23;
+$color-forest-accessible-dark-1: #026b30;
+$color-forest-accessible-dark-2: #014b22;
+$color-forest-accessible-light-1: #b3eacb;
+$color-forest-accessible-light-2: #ccf1dc;
+$color-forest-accessible: #008037;
+$color-forest: #00ac4a;
+$color-gold-accessible-dark-1: #665b0b;
+$color-gold-accessible-dark-2: #4e4608;
+$color-gold-accessible: #826f00;
+$color-gold: #c4b000;
+$color-grass-accessible-dark-1: #376911;
+$color-grass-accessible-dark-2: #2c530e;
+$color-grass-accessible: #417e12;
+$color-grass: #7ac143;
+$color-honey-accessible-dark-1: #705517;
+$color-honey-accessible-dark-2: #594312;
+$color-honey-accessible: #8d6b19;
+$color-honey: #b78b20;
+$color-lavender-accessible-dark-1: #6f4aa8;
+$color-lavender-accessible-dark-2: #604091;
+$color-lavender-accessible: #835cbc;
+$color-lavender: #af96d4;
+$color-lime-accessible-dark-1: #576111;
+$color-lime-accessible-dark-2: #3e450c;
+$color-lime-accessible: #667800;
+$color-lime: #c1d82f;
+$color-link-accessible-dark-1: #0a5e7a;
+$color-link-accessible-dark-2: #084c63;
+$color-link-accessible: #00799e;
+$color-link: #008dbd;
+$color-mint-accessible-dark-1: #276b45;
+$color-mint-accessible-dark-2: #1f5637;
+$color-mint-accessible: #3f7c5a;
+$color-mint: #71b790;
+$color-mist-accessible-dark-1: #356577;
+$color-mist-accessible-dark-2: #2a515f;
+$color-mist-accessible: #41778c;
+$color-mist: #8db9ca;
+$color-olive-accessible-dark-1: #576337;
+$color-olive-accessible-dark-2: #48522e;
+$color-olive-accessible: #677642;
+$color-olive: #9dbb68;
+$color-orange-accessible-dark-1: #a82c05;
+$color-orange-accessible-dark-2: #912305;
+$color-orange-accessible: #cd3c0d;
+$color-orange: #f26334;
+$color-peach-accessible-dark-1: #855304;
+$color-peach-accessible-dark-2: #6d4403;
+$color-peach-accessible: #9d6304;
+$color-peach: #fbb034;
+$color-purple-accessible-dark-1: #823d80;
+$color-purple-accessible-dark-2: #6f346d;
+$color-purple-accessible: #a2539a;
+$color-purple: #bd80b7;
+$color-raspberry-accessible-dark-1: #b32253;
+$color-raspberry-accessible-dark-2: #961c46;
+$color-raspberry-accessible: #d12b61;
+$color-raspberry: #f05587;
+$color-sky-accessible-dark-1: #095a6b;
+$color-sky-accessible-dark-2: #074755;
+$color-sky-accessible: #007b93;
+$color-sky: #00b6de;
+$color-slate-accessible-dark-1: #235696;
+$color-slate-accessible-dark-2: #1c4578;
+$color-slate-accessible: #3a70bf;
+$color-slate: #89aadb;
+$color-tangerine-accessible-dark-1: #7a3d00;
+$color-tangerine-accessible-dark-2: #663300;
+$color-tangerine-accessible-light-1: #ffdab3;
+$color-tangerine-accessible-light-2: #ffe6cc;
+$color-tangerine-accessible: #a15700;
+$color-tangerine: #ff8200;
+$color-teal-accessible-dark-1: #14615f;
+$color-teal-accessible-dark-2: #104c4b;
+$color-teal-accessible: #177c7a;
+$color-teal: #22bcb9;
+$color-terracotta-accessible-dark-1: #854525;
+$color-terracotta-accessible-dark-2: #703a1f;
+$color-terracotta-accessible: #ab5a2f;
+$color-terracotta: #d18158;
+$color-white: #ffffff;
+
+$color-ui-1: #f0f5fa;
+$color-ui-2: #e5f0fc;
+$color-ui-3: #c4d7ed;
+$color-ui-4: #e5e8eb;
+$color-ui-5: #a6b0bb;
+$color-ui-6: #696d73;
+$color-ui-7: #414345;
+$color-ui-8: #262626;
+
+$colors: (
+  "blue-dark-1": $color-blue-dark-1,
+  "blue-dark-2": $color-blue-dark-2,
+  "blue": $color-blue,
+  "danger-dark-1": $color-danger-dark-1,
+  "danger-dark-2": $color-danger-dark-2,
+  "danger-light-1": $color-danger-light-1,
+  "danger-light-2": $color-danger-light-2,
+  "danger": $color-danger,
+  "forest-accessible-dark-1": $color-forest-accessible-dark-1,
+  "forest-accessible-dark-2": $color-forest-accessible-dark-2,
+  "forest-accessible-light-1": $color-forest-accessible-light-1,
+  "forest-accessible-light-2": $color-forest-accessible-light-2,
+  "forest-accessible": $color-forest-accessible,
+  "forest": $color-forest,
+  "gold-accessible-dark-1": $color-gold-accessible-dark-1,
+  "gold-accessible-dark-2": $color-gold-accessible-dark-2,
+  "gold-accessible": $color-gold-accessible,
+  "gold": $color-gold,
+  "grass-accessible-dark-1": $color-grass-accessible-dark-1,
+  "grass-accessible-dark-2": $color-grass-accessible-dark-2,
+  "grass-accessible": $color-grass-accessible,
+  "grass": $color-grass,
+  "honey-accessible-dark-1": $color-honey-accessible-dark-1,
+  "honey-accessible-dark-2": $color-honey-accessible-dark-2,
+  "honey-accessible": $color-honey-accessible,
+  "honey": $color-honey,
+  "lavender-accessible-dark-1": $color-lavender-accessible-dark-1,
+  "lavender-accessible-dark-2": $color-lavender-accessible-dark-2,
+  "lavender-accessible": $color-lavender-accessible,
+  "lavender": $color-lavender,
+  "lime-accessible-dark-1": $color-lime-accessible-dark-1,
+  "lime-accessible-dark-2": $color-lime-accessible-dark-2,
+  "lime-accessible": $color-lime-accessible,
+  "lime": $color-lime,
+  "link-accessible-dark-1": $color-link-accessible-dark-1,
+  "link-accessible-dark-2": $color-link-accessible-dark-2,
+  "link-accessible": $color-link-accessible,
+  "link": $color-link,
+  "mint-accessible-dark-1": $color-mint-accessible-dark-1,
+  "mint-accessible-dark-2": $color-mint-accessible-dark-2,
+  "mint-accessible": $color-mint-accessible,
+  "mint": $color-mint,
+  "mist-accessible-dark-1": $color-mist-accessible-dark-1,
+  "mist-accessible-dark-2": $color-mist-accessible-dark-2,
+  "mist-accessible": $color-mist-accessible,
+  "mist": $color-mist,
+  "olive-accessible-dark-1": $color-olive-accessible-dark-1,
+  "olive-accessible-dark-2": $color-olive-accessible-dark-2,
+  "olive-accessible": $color-olive-accessible,
+  "olive": $color-olive,
+  "orange-accessible-dark-1": $color-orange-accessible-dark-1,
+  "orange-accessible-dark-2": $color-orange-accessible-dark-2,
+  "orange-accessible": $color-orange-accessible,
+  "orange": $color-orange,
+  "peach-accessible-dark-1": $color-peach-accessible-dark-1,
+  "peach-accessible-dark-2": $color-peach-accessible-dark-2,
+  "peach-accessible": $color-peach-accessible,
+  "peach": $color-peach,
+  "purple-accessible-dark-1": $color-purple-accessible-dark-1,
+  "purple-accessible-dark-2": $color-purple-accessible-dark-2,
+  "purple-accessible": $color-purple-accessible,
+  "purple": $color-purple,
+  "raspberry-accessible-dark-1": $color-raspberry-accessible-dark-1,
+  "raspberry-accessible-dark-2": $color-raspberry-accessible-dark-2,
+  "raspberry-accessible": $color-raspberry-accessible,
+  "raspberry": $color-raspberry,
+  "sky-accessible-dark-1": $color-sky-accessible-dark-1,
+  "sky-accessible-dark-2": $color-sky-accessible-dark-2,
+  "sky-accessible": $color-sky-accessible,
+  "sky": $color-sky,
+  "slate-accessible-dark-1": $color-slate-accessible-dark-1,
+  "slate-accessible-dark-2": $color-slate-accessible-dark-2,
+  "slate-accessible": $color-slate-accessible,
+  "slate": $color-slate,
+  "tangerine-accessible-dark-1": $color-tangerine-accessible-dark-1,
+  "tangerine-accessible-dark-2": $color-tangerine-accessible-dark-2,
+  "tangerine-accessible-light-1": $color-tangerine-accessible-light-1,
+  "tangerine-accessible-light-2": $color-tangerine-accessible-light-2,
+  "tangerine-accessible": $color-tangerine-accessible,
+  "tangerine": $color-tangerine,
+  "teal-accessible-dark-1": $color-teal-accessible-dark-1,
+  "teal-accessible-dark-2": $color-teal-accessible-dark-2,
+  "teal-accessible": $color-teal-accessible,
+  "teal": $color-teal,
+  "terracotta-accessible-dark-1": $color-terracotta-accessible-dark-1,
+  "terracotta-accessible-dark-2": $color-terracotta-accessible-dark-2,
+  "terracotta-accessible": $color-terracotta-accessible,
+  "terracotta": $color-terracotta,
+  "white": $color-white,
+  "ui-1": $color-ui-1,
+  "ui-2": $color-ui-2,
+  "ui-3": $color-ui-3,
+  "ui-4": $color-ui-4,
+  "ui-5": $color-ui-5,
+  "ui-6": $color-ui-6,
+  "ui-7": $color-ui-7,
+  "ui-8": $color-ui-8,
+);
+
+// All colors are available as custom properties.
+
+:root {
+  @each $color, $value in $colors {
+    --gs1-color-#{$color}: #{$value};
+  }
+}
+
+// However, the light and dark variants are not to be used for ad-hoc color overrides.
+
+$colors-override-allowed: (
+  "blue": $color-blue,
+  "danger": $color-danger,
+  "forest-accessible": $color-forest-accessible,
+  "forest": $color-forest,
+  "gold-accessible": $color-gold-accessible,
+  "gold": $color-gold,
+  "grass-accessible": $color-grass-accessible,
+  "grass": $color-grass,
+  "honey-accessible": $color-honey-accessible,
+  "honey": $color-honey,
+  "lavender-accessible": $color-lavender-accessible,
+  "lavender": $color-lavender,
+  "lime-accessible": $color-lime-accessible,
+  "lime": $color-lime,
+  "link-accessible": $color-link-accessible,
+  "link": $color-link,
+  "mint-accessible": $color-mint-accessible,
+  "mint": $color-mint,
+  "mist-accessible": $color-mist-accessible,
+  "mist": $color-mist,
+  "olive-accessible": $color-olive-accessible,
+  "olive": $color-olive,
+  "orange-accessible": $color-orange-accessible,
+  "orange": $color-orange,
+  "peach-accessible": $color-peach-accessible,
+  "peach": $color-peach,
+  "purple-accessible": $color-purple-accessible,
+  "purple": $color-purple,
+  "raspberry-accessible": $color-raspberry-accessible,
+  "raspberry": $color-raspberry,
+  "sky-accessible": $color-sky-accessible,
+  "sky": $color-sky,
+  "slate-accessible": $color-slate-accessible,
+  "slate": $color-slate,
+  "tangerine-accessible": $color-tangerine-accessible,
+  "tangerine": $color-tangerine,
+  "teal-accessible": $color-teal-accessible,
+  "teal": $color-teal,
+  "terracotta-accessible": $color-terracotta-accessible,
+  "terracotta": $color-terracotta,
+  "white": $color-white,
+  "ui-1": $color-ui-1,
+  "ui-2": $color-ui-2,
+  "ui-3": $color-ui-3,
+  "ui-4": $color-ui-4,
+  "ui-5": $color-ui-5,
+  "ui-6": $color-ui-6,
+  "ui-7": $color-ui-7,
+  "ui-8": $color-ui-8,
+);
+
+@each $color, $value in $colors-override-allowed {
+  .gs1-color-#{$color} {
+    color: #{$value} !important;
+  }
+
+  .gs1-background-color-#{$color} {
+    background-color: #{$value} !important;
+  }
+}

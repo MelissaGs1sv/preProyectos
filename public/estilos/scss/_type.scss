@@ -1,0 +1,187 @@
+// Type
+// ============================================================================
+
+@use "variables" as gs1-vars;
+@use "../node_modules/rfs/scss" as rfs;
+@use "colors" as gs1-colors;
+
+%heading {
+  font-weight: 400;
+  line-height: gs1-vars.$line-height-heading;
+  color: gs1-colors.$color-blue;
+}
+
+:root {
+  font-family: "Gotham SSm A", "Gotham SSm B", Verdana, sans-serif;
+  font-variant-numeric: tabular-nums; // For tabular 1
+  line-height: gs1-vars.$line-height-default;
+  color: gs1-colors.$color-ui-8;
+}
+
+html {
+  font-size: gs1-vars.$font-root; // default font-size, typically 16px
+}
+
+body {
+  @include rfs.font-size(gs1-vars.$font-body);
+}
+
+.gs1-eyebrow {
+  display: block;
+  color: gs1-colors.$color-orange-accessible;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  @include rfs.margin-bottom(gs1-vars.$spacer-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+h1,
+.gs1-h1 {
+  @extend %heading;
+  @include rfs.font-size(gs1-vars.$font-1);
+  font-weight: 300;
+  @include rfs.margin-bottom(gs1-vars.$spacer-1);
+
+  > .gs1-eyebrow {
+    @include rfs.font-size(1.25rem);
+    font-weight: 400;
+  }
+}
+
+h2,
+.gs1-h2 {
+  @extend %heading;
+  @include rfs.font-size(gs1-vars.$font-2);
+  margin-top: 1.5em;
+  @include rfs.margin-bottom(gs1-vars.$spacer-4);
+
+  > .gs1-eyebrow {
+    @include rfs.font-size(1.125rem);
+  }
+}
+
+h3,
+.gs1-h3 {
+  @extend %heading;
+  @include rfs.font-size(gs1-vars.$font-3);
+  margin-top: 1.5em;
+  @include rfs.margin-bottom(gs1-vars.$spacer-3);
+
+  > .gs1-eyebrow {
+    @include rfs.font-size(gs1-vars.$font-size-little);
+  }
+}
+
+h4,
+.gs1-h4 {
+  @extend %heading;
+  @include rfs.font-size(gs1-vars.$font-4);
+  margin-top: 1.5em;
+  @include rfs.margin-bottom(gs1-vars.$spacer-3);
+}
+
+h5,
+.gs1-h5 {
+  @extend %heading;
+  @include rfs.font-size(gs1-vars.$font-5);
+  font-weight: 500;
+  margin-top: 1.5em;
+  @include rfs.margin-bottom(gs1-vars.$spacer-2);
+}
+
+h6,
+.gs1-h6 {
+  @extend %heading;
+  @include rfs.font-size(gs1-vars.$font-6);
+  margin-top: 1.5em;
+  @include rfs.margin-bottom(gs1-vars.$spacer-2);
+}
+
+.gs1-display-1 {
+  @include rfs.font-size(gs1-vars.$font-display-1);
+  font-weight: 200;
+  letter-spacing: -0.03em;
+  @include rfs.margin-bottom(gs1-vars.$spacer-1);
+}
+
+.gs1-display-2 {
+  @include rfs.font-size(gs1-vars.$font-display-2);
+  font-weight: 200;
+  letter-spacing: -0.03em;
+  @include rfs.margin-bottom(gs1-vars.$spacer-1);
+}
+
+.gs1-subtitle {
+  @include rfs.font-size(gs1-vars.$font-size-subtitle);
+  line-height: gs1-vars.$line-height-tight;
+  @include rfs.margin-bottom(gs1-vars.$spacer-5);
+}
+
+.gs1-intro {
+  @include rfs.font-size(gs1-vars.$font-size-intro);
+  margin-top: 1em;
+  @include rfs.margin-bottom(gs1-vars.$spacer-4);
+}
+
+.gs1-big {
+  @include rfs.font-size(gs1-vars.$font-size-big);
+}
+
+.gs1-little,
+figcaption {
+  @include rfs.font-size(gs1-vars.$font-size-little);
+}
+
+.gs1-legal {
+  @include rfs.font-size(gs1-vars.$font-size-tiny);
+  color: gs1-colors.$color-ui-6;
+}
+
+.gs1-line-height-tight {
+  line-height: gs1-vars.$line-height-tight;
+}
+
+address,
+aside,
+details,
+dialog,
+p,
+pre,
+blockquote {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+a {
+  color: gs1-colors.$color-link-accessible;
+  transition: color 0.1s ease;
+
+  &:hover {
+    color: gs1-colors.$color-blue;
+  }
+
+  &:active {
+    color: gs1-colors.$color-blue-dark-2;
+  }
+
+  &:focus {
+    outline-color: gs1-colors.$color-blue;
+  }
+}
+
+ol,
+ul {
+  padding-left: 1.25em;
+}
+
+li {
+  @include rfs.margin-bottom(gs1-vars.$spacer-2);
+}
